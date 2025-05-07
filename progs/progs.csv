@@ -1,20 +1,16 @@
 #TAG,NAME IN REPO (or git url),PURPOSE (should be a verb phrase to sound right while installing)
-
 BASIC
 ,xorg-server,"is the graphical server. This first one may take a while as it pulls many other dependencies first on clean installs."
 ,xorg-xwininfo,"allows querying information about windows."
 ,xorg-xinit,"starts the graphical server."
-,xorg-xrandr, ""
-,xorg-xinput, ""
+,xorg-xrandr,"manages screen resolution, orientation, and multi-monitor setups."
+,xorg-xinput,"manages input devices like keyboards, touchpads, and mice."
 ,polkit,"manages user policies."
 
 GRAPHICS
-,nvidia, ""
-,nvidia-utils, ""
-,xf86-video-nouveau, ""
-,xf86-video-intel, ""
-,xf86-video, ""
-,mesa, ""
+,nvidia,"is the proprietary driver for NVIDIA GPUs, offering better performance and features."
+,nvidia-utils,"provides essential utilities for NVIDIA drivers, including `nvidia-smi` and OpenGL libs."
+,mesa,"provides open-source OpenGL and Vulkan implementations (needed for almost all graphics setups)."
 
 NETWORKS
 ,networkmanager,"manages wired and wireless network connections."
@@ -22,26 +18,26 @@ NETWORKS
 ,modem-manager-gui,"provides a GUI for mobile broadband modems."
 ,modemmanager,"manages mobile broadband connections."
 ,blueman,"provides a GUI for managing Bluetooth devices."
-,bluez, ""
-,bluez-utils, ""
+,bluez,"is the official Linux Bluetooth protocol stack."
+,bluez-utils,"adds CLI utilities for managing Bluetooth (e.g., `bluetoothctl`)."
 
 BACKLIGHT AND POWER
-,acpilight, ""
-,upower, ""
+,acpilight,"controls screen brightness using ACPI (more compatible than xbacklight on many systems)."
+,upower,"provides power statistics and battery info to desktop environments and tools."
 
 SHELL
 ,zsh,"is the preferred shell for this system."
 ,bash,"is kept as a backup default shell."
 
 TERMINAL
-,xfce4-terminal, ""
-,xterm, "backupp terminal" 
+,xfce4-terminal,"is a GTK-based terminal emulator with optional transparency and mouse support."
+,xterm,"backupp terminal"
 
 AUDIO
 ,pavucontrol,"lets you control audio volumes and devices."
-,pipewire, ""
-,pipewire-pulse, "" 
-,wireplumber, ""
+,pipewire,"is the next-gen replacement for PulseAudio and JACK—handles all audio routing."
+,pipewire-pulse,"makes PipeWire compatible with PulseAudio clients."
+,wireplumber,"is the default session manager for PipeWire, managing audio and video nodes."
 
 FONTS
 ,ttf-font-awesome,"provides extended glyph support."
@@ -60,25 +56,19 @@ UTL PROGRAMS
 ,unzip,"unzips zips."
 ,moreutils,"is a collection of useful unix tools."
 ,udisks2,"is the backend that supports disk mounting tools."
-,socat,"relays data between file descriptors, sockets, etc."
 
 USB DETECT
 ,gvfs,"enables automounting and file access for user devices."
-,gvfs-mtp, ""
-,gvfs-gphoto2, ""
-,gvfs-afc, ""
-,gvfs-smb, ""
-,thunar-volman, ""
-
-XCFE
-,xfce4,"is a lightweight desktop environment."
-,xfce4-goodies, ""
-,xfce4-clipman-plugin,"adds a clipboard manager with sync and history support to XFCE."
+,gvfs-mtp,"adds MTP (Android phones, etc.) device support to GVFS."
+,gvfs-gphoto2,"adds support for cameras using the PTP/GPhoto2 protocol."
+,gvfs-afc,"adds support for Apple mobile devices over USB (AFC protocol)."
+,gvfs-smb,"adds SMB (Windows network shares) support to GVFS."
+,thunar-volman,"automatically handles media and devices in Thunar (e.g., mount on plug-in)."
 
 I3
-,i3-wm, ""
-,i3status, "" 
-,dmenu, ""
+,i3-wm,"is a tiling window manager that prioritizes efficiency and keyboard use."
+,i3status,"generates a customizable status bar for use with i3bar."
+,dmenu,"is a fast application launcher for X—keyboard-driven, minimal."
 
 BROWSERS
 ,firefox,"is the mainstream open-source web browser."
@@ -87,11 +77,15 @@ BROWSERS
 
 PROGRAMS
 ,mpv,"is the patrician's choice video player."
+,htop, "system monetoring"
+,gnupg, "" 
+,openssh, ""
+,neofetch, "Hackerman points"
 ,man-db,"lets you read man pages of programs."
 ,flameshot,"takes configurable screenshots."
 ,spotify,"is the proprietary Spotify client."
 
 RICE
-,xcompmgr,"is for transparency and removing screen-tearing."
+,picom,"is for transparency and removing screen-tearing."
 ,xwallpaper,"sets the wallpaper."
 ,unclutter,"hides an inactive mouse."
