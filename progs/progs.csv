@@ -1,41 +1,97 @@
 #TAG,NAME IN REPO (or git url),PURPOSE (should be a verb phrase to sound right while installing)
+
+BASIC
 ,xorg-server,"is the graphical server. This first one may take a while as it pulls many other dependencies first on clean installs."
 ,xorg-xwininfo,"allows querying information about windows."
 ,xorg-xinit,"starts the graphical server."
+,xorg-xrandr, ""
+,xorg-xinput, ""
 ,polkit,"manages user policies."
-,ttf-font-awesome,"provides extended glyph support."
-,ttf-dejavu,"properly displays emojis."
-,xcompmgr,"is for transparency and removing screen-tearing."
-,dosfstools,"allows your computer to access dos-like filesystems."
-,exfat-utils,"allows management of FAT drives."
-,xwallpaper,"sets the wallpaper."
-,mpv,"is the patrician's choice video player."
-,man-db,"lets you read man pages of programs."
-,noto-fonts,"is an expansive font package."
-,noto-fonts-emoji,"is an emoji font."
-,ntfs-3g,"allows accessing NTFS partitions."
-,unclutter,"hides an inactive mouse."
-,unzip,"unzips zips."
-,xorg-xbacklight,"enables changing screen brightness levels."
-,moreutils,"is a collection of useful unix tools."
-,flameshot,"takes configurable screenshots."
+
+GRAPHICS
+,nvidia, ""
+,nvidia-utils, ""
+,xf86-video-nouveau, ""
+,xf86-video-intel, ""
+,xf86-video, ""
+,mesa, ""
+
+NETWORKS
+,networkmanager,"manages wired and wireless network connections."
+,nm-connection-editor,"is the GUI network config tool for NetworkManager."
 ,modem-manager-gui,"provides a GUI for mobile broadband modems."
 ,modemmanager,"manages mobile broadband connections."
-,nm-connection-editor,"is the GUI network config tool for NetworkManager."
-,socat,"relays data between file descriptors, sockets, etc."
-,spotify,"is the proprietary Spotify client."
-,torbrowser-launcher,"downloads and runs the Tor browser."
-,xfce4,"is a lightweight desktop environment."
-,firefox,"is the mainstream open-source web browser."
-,chromium,"is the open-source base of Google Chrome."
-,networkmanager,"manages wired and wireless network connections."
 ,blueman,"provides a GUI for managing Bluetooth devices."
-,gvfs,"enables automounting and file access for user devices."
-,udisks2,"is the backend that supports disk mounting tools."
-,pavucontrol,"lets you control audio volumes and devices."
-,xdg-utils,"lets apps open URLs or default programs."
-,xdg-user-dirs,"creates default user folders like Documents."
+,bluez, ""
+,bluez-utils, ""
+
+BACKLIGHT AND POWER
+,acpilight, ""
+,upower, ""
+
+SHELL
 ,zsh,"is the preferred shell for this system."
 ,bash,"is kept as a backup default shell."
+
+TERMINAL
+,xfce4-terminal, ""
+,xterm, "backupp terminal" 
+
+AUDIO
+,pavucontrol,"lets you control audio volumes and devices."
+,pipewire, ""
+,pipewire-pulse, "" 
+,wireplumber, ""
+
+FONTS
+,ttf-font-awesome,"provides extended glyph support."
+,ttf-dejavu,"properly displays emojis."
+,noto-fonts,"is an expansive font package."
+,noto-fonts-emoji,"is an emoji font."
+
+FILE SYS
+,dosfstools,"allows your computer to access dos-like filesystems."
+,exfat-utils,"allows management of FAT drives."
+,ntfs-3g,"allows accessing NTFS partitions."
+
+UTL PROGRAMS
+,xdg-utils,"lets apps open URLs or default programs."
 ,xclip,"allows command-line access to both Linux clipboards."
+,unzip,"unzips zips."
+,moreutils,"is a collection of useful unix tools."
+,udisks2,"is the backend that supports disk mounting tools."
+,socat,"relays data between file descriptors, sockets, etc."
+
+USB DETECT
+,gvfs,"enables automounting and file access for user devices."
+,gvfs-mtp, ""
+,gvfs-gphoto2, ""
+,gvfs-afc, ""
+,gvfs-smb, ""
+,thunar-volman, ""
+
+XCFE
+,xfce4,"is a lightweight desktop environment."
+,xfce4-goodies, ""
 ,xfce4-clipman-plugin,"adds a clipboard manager with sync and history support to XFCE."
+
+I3
+,i3-wm, ""
+,i3status, "" 
+,dmenu, ""
+
+BROWSERS
+,firefox,"is the mainstream open-source web browser."
+,chromium,"is the open-source base of Google Chrome."
+,torbrowser-launcher,"downloads and runs the Tor browser."
+
+PROGRAMS
+,mpv,"is the patrician's choice video player."
+,man-db,"lets you read man pages of programs."
+,flameshot,"takes configurable screenshots."
+,spotify,"is the proprietary Spotify client."
+
+RICE
+,xcompmgr,"is for transparency and removing screen-tearing."
+,xwallpaper,"sets the wallpaper."
+,unclutter,"hides an inactive mouse."
